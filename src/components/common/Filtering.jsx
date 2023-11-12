@@ -1,3 +1,4 @@
+//src/components/common/Filtering.jsx
 import propTypes from 'prop-types';
 
 const Filtering = ({ onFilterChange, onSortChange, filter, sort }) => {
@@ -11,9 +12,9 @@ const Filtering = ({ onFilterChange, onSortChange, filter, sort }) => {
         value={filter}
         onChange={(e) => onFilterChange(e.target.value)}
       >
-        <option value="all">All</option>
-        <option value="fulltime">Full Time</option>
-        <option value="parttime">Part Time</option>
+        <option selected value="all">All</option>
+        <option value="full time">Full Time</option>
+        <option value="part time">Part Time</option>
       </select>
       <span className="mx-3 text-lg">Sort by:</span>
       <select
